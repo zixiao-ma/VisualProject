@@ -1,0 +1,133 @@
+.monitor {
+  height: 6rem;
+
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0 !important;
+    overflow: hidden;
+  }
+
+  .tabs {
+    display: flex;
+    margin-bottom: 0.225rem;
+    padding: 0 0.45rem;
+
+    li {
+      font-size: 0.225rem;
+      color: #4c9bfd;
+      cursor: pointer;
+
+      &.active {
+        color: #fff;
+      }
+
+      &:first-child {
+        border-right: 0.0125rem solid #fff;
+        padding-right: 0.1875rem;
+      }
+
+      &:last-child {
+        padding-left: 0.1875rem;
+      }
+
+    }
+  }
+
+  .content {
+    flex: 1;
+    display: block;
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.05;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.15rem 0.45rem;
+      color: #68d8fe;
+      font-size: 0.175rem;
+
+      .col {
+        &:first-child {
+          width: 1rem;
+        }
+
+        &:nth-child(2) {
+          width: 2.5rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        &:nth-child(3) {
+          width: 1rem;
+        }
+      }
+    }
+  }
+
+  .marquee-view {
+
+    width: 100%;
+    overflow: hidden;
+
+
+    .marquee {
+      animation: move 15s linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.05;
+        font-size: 0.15rem;
+        color: #61a8ff;
+        padding: 0.15rem 0.45rem;
+
+        .col {
+          &:first-child {
+            width: 1rem;
+          }
+
+          &:nth-child(2) {
+            width: 2.5rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+
+          &:nth-child(3) {
+            width: 1rem;
+          }
+        }
+
+        .icon-dot {
+          position: absolute;
+          left: 0.2rem;
+          opacity: 0;
+        }
+
+        &:hover {
+          .icon-dot {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@keyframes move {
+  0% {
+
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

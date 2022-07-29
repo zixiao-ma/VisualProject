@@ -1,0 +1,71 @@
+@import url('overview');
+@import url('monitor');
+@import "point";
+
+.viewport {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  min-height: 780px;
+  background: url("../image/logo.png") no-repeat;
+  background-size: contain;
+  color: #fff;
+  margin: 0 auto;
+  padding: 1.1rem 0.25rem 0;
+
+  .column {
+    flex: 3;
+
+    &:nth-child(2) {
+      flex: 4;
+    }
+
+    .panel {
+      position: relative;
+      border: 15px solid yellow;
+      border-image-source: url("../image/border.png");
+      border-image-slice: 51 38 20 132;
+      border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+      margin-bottom: 0.25rem;
+
+      .inner {
+        padding: .3rem .45rem;
+        position: absolute;
+        top: -0.6375rem;
+        left: -1.65rem;
+        right: -0.475rem;
+        bottom: -0.25rem;
+        display: none;
+      }
+
+      .loading-box {
+        padding: .3rem .45rem;
+        position: absolute;
+        top: -0.6375rem;
+        left: -1.65rem;
+        right: -0.475rem;
+        bottom: -0.25rem;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .loading {
+          animation: loading .8s linear infinite;
+          font-size: 20px;
+          color: #4c9bfd;
+        }
+      }
+
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
