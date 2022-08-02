@@ -1,0 +1,53 @@
+.order {
+    height: 1.875rem;
+
+}
+
+.order .inner {
+    padding: 0.2rem 0.45rem !important;
+}
+
+.order_top {
+    margin-bottom: 5px;
+}
+
+.order_top span {
+    color: #3967FF;
+    font-size: 0.1875rem;
+    border-right: 0.025rem solid #00f2f1;
+    padding-right: 0.1875rem;
+    cursor: pointer;
+    margin-right: 0.125rem;
+
+}
+
+.order_top span:last-child {
+    border: none;
+}
+
+.order_top span.active {
+    color: #fff;
+    font-size: 0.22rem;
+}
+
+.order_item h4 {
+    font-size: 0.35rem;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.order_item span {
+    display: block;
+    color: #4c9bfd;
+    font-size: 0.2rem;
+}
+
+.order_item {
+    width: 50%;
+}
+
+.order_center {
+    display: flex;
+    align-items: center;
+}

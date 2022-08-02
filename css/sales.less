@@ -1,0 +1,43 @@
+.sales {
+  .chart {
+    flex: 1;
+  }
+
+  height: 3.1rem;
+
+  .inner {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .caption {
+    display: flex;
+    line-height: 1;
+    margin-bottom: 5px;
+
+    h3 {
+      height: 0.225rem;
+      padding-right: 0.225rem;
+      border-right: 0.025rem solid #00f2f1;
+      font-size: 0.25rem;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    span {
+      color: #0bace6;
+      font-size: 0.2rem;
+      padding: 0.05rem;
+      margin: -0.0375rem 0 0 0.2625rem;
+      border-radius: 0.0375rem;
+      cursor: pointer;
+
+      &.active {
+        background-color: #4c9bfd;
+        color: #fff;
+      }
+    }
+  }
+
+
+}

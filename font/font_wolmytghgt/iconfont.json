@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4325757",
+      "name": "icon_loading",
+      "font_class": "icon_loading",
+      "unicode": "eb80",
+      "unicode_decimal": 60288
+    },
+    {
+      "icon_id": "11231623",
+      "name": "loading",
+      "font_class": "loading",
+      "unicode": "e782",
+      "unicode_decimal": 59266
+    },
+    {
+      "icon_id": "12330036",
+      "name": "加载",
+      "font_class": "jiazai",
+      "unicode": "e7ba",
+      "unicode_decimal": 59322
+    }
+  ]
+}

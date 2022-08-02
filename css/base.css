@@ -47,6 +47,17 @@ h4 {
     }
 }
 
+@media screen and (max-width: 1140px) {
+    .chart .data {
+        width: 108px !important;
+        height: 135px !important;
+    }
+
+    .order .inner {
+        top: -1rem !important;
+    }
+}
+
 @media screen and (min-width: 1920px) {
     html {
         font-size: 80px !important;
